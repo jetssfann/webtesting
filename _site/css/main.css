@@ -1,0 +1,215 @@
+/*GLOBAL STYLES */
+
+html {
+  font-family: 'Gotham Book';
+}
+
+.full-container {
+  width: 100vw;
+}
+
+/*HEADER STYLES */
+.header {
+  background-color: #000;
+  height: 110px;
+  width: 100vw;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  background-color: #000;
+  height: 110px;
+  z-index: 9;
+}
+.header-nav {
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 45px;
+}
+
+.header-nav > li {
+  display: inline-block;
+  margin-left: 1em;
+  font-size: 1.5em;
+}
+
+.header-nav > li ~ li {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding-left: 1em;
+}
+
+.header-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  color: #1c9ad6;
+}
+
+.header-logo {
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  position: absolute;
+  width: 10vh;
+}
+
+.header-logo img {
+  width: 30vh;
+}
+
+/* HERO STYLES */
+
+.hero {
+  margin-top: 15px;
+  height: 75vh;
+  background-image: url(/images/CTA.png);
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image {
+  width: 100vw;
+  position: absolute;
+}
+
+.hero-header {
+  font-size: 3em;
+  transform: translate(10%,100%);
+
+}
+
+.hero-exerpt {
+  text-align: center;
+  transform: translate(-100%,100%);
+  width: 200px;
+  float: right;
+  font-size: 1.5em;
+}
+
+/* CLUB SECTION */
+
+.clubs {
+  margin: 20px 0 15px;
+  text-align: center;
+  height: 10em;
+}
+
+.clubs h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.club-search {
+  width: 45vw;
+  height: 3em;
+  border-radius: 45px;
+}
+
+/* PRODUCT STYLES */
+
+.full-product-item {
+  font-size: 0.75rem;
+  margin: 15px 0 0;
+  padding: 0;
+  height: 70vh;
+  transition: all 0.5s ease-in-out;
+}
+
+.full-product-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.national-league-container {
+  background-image: url(/images/National_League.png);
+  background-size: cover;
+}
+
+.national-league-container:hover {
+  background-image: url(/images/National_League_grey.png);
+  background-size: cover;
+}
+
+.tournament-container {
+  background-image: url(/images/Tournaments.png);
+  background-size: cover;
+}
+
+.tournament-container:hover {
+  background-image: url(/images/Tournament_grey.png);
+  background-size: cover;
+}
+
+
+.league-container {
+  background-image: url(/images/league.png);
+  background-size: cover;
+}
+
+.full-product-item h1 {
+  font-size: 5em;
+  transform: translate(5%,30%);
+}
+
+.full-product-item a:hover {
+  background-color: rgba(150, 150, 150, 1);
+}
+
+/*MENU STYLES*/
+
+.menu {
+  font-size: 2rem;
+  width: 50vw;
+  height: 70vh;
+  color: #fff;
+  float: right;
+}
+
+.nl-menu {
+  transform: translate(-50%,20%);
+  text-align: center;
+  visibility: hidden;
+  width: 20vw;
+  transition-delay: 0.2s;
+}
+
+.nl-menu h3 {
+  background: rgba(75, 75, 75, 0.7);
+  margin-top: 10px;
+  padding: 20px 0 0;
+  margin: 0 0 2px;
+}
+
+.nl-menu ul {
+  padding: 10px 0;
+  background: rgba(125, 125, 125, 0.5);
+  list-style: none;
+}
+
+.nl-menu li ~ li{
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 20px 0 0;
+}
+
+.nl-menu-trigger:hover .nl-menu {
+  visibility: visible;
+}
+.tournament-menu {
+  transform: translate(45%,-10%);
+  visibility: hidden;
+  transition-delay: 0.2s;
+}
+
+.tournament-menu img {
+  height: 15vh;
+  padding: 0px 15px 15px;
+  transform: translate(-50%,0%);
+}
+
+.tournament-menu-trigger:hover .tournament-menu {
+  visibility: visible;
+}
