@@ -113,19 +113,6 @@ body {
 .heading {
   margin: 0; }
 
-.search {
-  transform: translate(113%, -140%);
-  margin: 0;
-  position: absolute; }
-  .search input {
-    border-radius: 99px;
-    width: 30vw;
-    height: 5vh;
-    text-align: center;
-    font-size: 1.5em;
-    background-color: #fff;
-    border-color: #bfbfbf; }
-
 .hero {
   margin: 1.5em 4em; }
 
@@ -231,11 +218,17 @@ body {
     text-decoration: none;
     text-transform: uppercase; }
 
-.login-image {
-  align-items: center;
-  background-color: #ddd; }
-  .login-image:hover .login-image {
-    transition: all .5s ease-out; }
+.search-menu {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  align-content: center;
+  background-color: #000; }
+
+.search-drop {
+  margin: 1em;
+  width: 200px;
+  background-color: #999; }
 
 @media screen and (max-width: 768px) {
   main {
