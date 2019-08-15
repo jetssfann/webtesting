@@ -1,0 +1,23 @@
+{
+  "name": "edp",
+  "version": "1.0.0",
+  "description": "EDP website",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jetssfann/webtesting.git"
+  },
+  "author": "phil cameron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jetssfann/webtesting/issues"
+  },
+  "homepage": "https://github.com/jetssfann/webtesting#readme"
+}

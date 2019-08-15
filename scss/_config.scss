@@ -1,0 +1,70 @@
+$primary-color: #fff;
+$secondary-color: #eece1a;
+$show-home-image: true;
+$home-image: url(../img/background.jpg);
+$background-opacity: .9;
+
+body {
+  background: $primary-color;
+}
+
+@mixin easeOut {
+  transition: all .5s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    &#bg-img{
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        background: rgba($primary-color, $background-opacity);
+        content: '';
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+//set text color
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+
+// MEDIA QUERIES
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px){
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px){
+    @content;
+  }
+}

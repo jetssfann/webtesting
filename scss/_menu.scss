@@ -1,0 +1,131 @@
+// MENU BUTTON
+
+.menu-btn {
+  @include easeOut;
+  cursor: pointer;
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  transform: scale(1.1);
+  z-index: 3;
+
+  .btn-line {
+    @include easeOut;
+    background: set-text-color($primary-color);
+    height: 3px;
+    margin: 0 0 5px;
+    width: 28px;
+  }
+
+  // Rotate Toaster into X
+
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line{
+    // Lne 1 Rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      // Line 2 Hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      // Line 3 Rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+}
+
+// Menu Over lay
+
+.menu {
+  opacity: .9;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+
+  &.show {
+    visibility: visible;
+  }
+
+  &-branding,
+  &-nav {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    float: left;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    width: 50%;
+  }
+
+  &-nav {
+    background: darken($primary-color, 25);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+
+    }
+  }
+
+  &-branding {
+    background: $primary-color;
+    @include easeOut;
+    transform: translate3d(0, 100%, 0);
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .portrait {
+      background: url('../img/EDP_LOGO.png');
+      height: 250px;
+      width: 250px;
+    }
+  }
+  .nav-item {
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+
+  }
+
+  .nav-link {
+    @include easeOut;
+    color: set-text-color($primary-color);
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 1rem 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+}
+
+// DELAY EACH NAV ITEM SLIDE
+
+@for $x from 1 through 8 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * .1s;
+  }
+}

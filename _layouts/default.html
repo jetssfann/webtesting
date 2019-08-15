@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   {% include head.html %}
+  {% include header.html %}
   <body>
-    <div class="Full-wrap">
-    {% include header.html %}
 
     {{ content }}
-    </div>
+
+    <script src="js/main.js"></script>
   </body>
+  <footer>
+    {% include footer.html %}
+  </footer>
 </html>

@@ -1,0 +1,208 @@
+@import 'config';
+@import 'menu';
+
+
+// Heading Styles
+.header-logo {
+  @include easeOut;
+  height: 10vh;
+  cursor: pointer;
+
+  &:hover {
+    @include easeOut;
+    transform: translate(0, 15%) scale(1.25);
+  }
+}
+
+
+.heading {
+  margin: 0;
+}
+
+.search {
+  transform: translate(113%, -140%);
+  margin: 0;
+  position: absolute;
+
+
+  input{
+    border-radius: 99px;
+    width: 30vw;
+    height: 5vh;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #fff;
+    border-color: darken($primary-color, 25);
+
+  }
+}
+
+//Hero styles
+
+.hero {
+  margin: 1.5em 4em;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-areas:
+  'league league indoor college'
+  'news clubs tournament tournament';
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: .5em;
+  grid-auto-rows: 33vh;
+
+  .league-contain {
+    grid-area: league;
+    overflow: hidden;
+
+    .leagues-hero {
+      @include easeOut;
+      background-image: url('/images/Leagues.jpg');
+      background-position: center;
+      background-size: cover;
+      height: 105%;
+      text-align: center;
+      width: 105%;
+    }
+
+    &:hover .leagues-hero {
+      @include easeOut;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .indoor-contain {
+    grid-area: indoor;
+    overflow: hidden;
+
+    .indoor-hero {
+      @include easeOut;
+      background-image: url('/images/futsal.png');
+      background-position: center;
+      background-size: cover;
+      height: 110%;
+      text-align: center;
+      width: 110%;
+    }
+
+    &:hover .indoor-hero {
+      @include easeOut;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .college-contain {
+    grid-area: college;
+    overflow: hidden;
+
+    .college-hero {
+      @include easeOut;
+      background-image: url('/images/college.jpg');
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      height: 110%;
+      widows: 110%;
+    }
+
+    &:hover .college-hero {
+      @include easeOut;
+      height: 100%;
+      width: 100%;
+  }
+}
+
+  .clubs-contain {
+    grid-area: clubs;
+    overflow: hidden;
+
+    .clubs-hero {
+      @include easeOut;
+      background-image: url('/images/clubs.jpg');
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      height: 110%;
+      width: 110%;
+    }
+
+    &:hover .clubs-hero {
+      @include easeOut;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .news-contain {
+    grid-area: news;
+    overflow: hidden;
+
+
+    .news-hero {
+      @include easeOut;
+      background-image: url('/images/news.png');
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      height: 110%;
+      width: 110%;
+    }
+
+    &:hover .news-hero {
+      @include easeOut;
+      background-color: rgba(20, 20, 20, 1);
+      height: 100%;
+      width: 100%;
+}
+
+  }
+
+  .tournaments-contain {
+    grid-area: tournament;
+    overflow: hidden;
+
+    .tournaments-hero {
+      @include easeOut;
+      background-image: url('/images/tournament.jpg');
+      // background-position: top;
+      background-size: cover;
+      height: 110%;
+      text-align: center;
+      width: 110%;
+      }
+
+    &:hover .tournaments-hero {
+      @include easeOut;
+      height: 100%;
+      width: 100%;
+    }
+
+  }
+
+
+  a {
+    color: #000;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+// Login styles
+
+.login-image {
+  align-items: center;
+  background-color: #ddd;
+
+  &:hover .login-image{
+    @include easeOut;
+  }
+}
+
+
+//Mobile QUERIES
+
+@import 'mobile';
