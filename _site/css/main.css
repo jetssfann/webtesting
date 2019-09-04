@@ -1,5 +1,5 @@
 body {
-  background: #fff; }
+  background: #262626; }
 
 .menu-btn {
   transition: all .5s ease-out;
@@ -11,7 +11,7 @@ body {
   z-index: 3; }
   .menu-btn .btn-line {
     transition: all .5s ease-out;
-    background: #000;
+    background: #fff;
     height: 3px;
     margin: 0 0 5px;
     width: 28px; }
@@ -42,7 +42,7 @@ body {
     overflow: hidden;
     width: 50%; }
   .menu-nav {
-    background: #bfbfbf;
+    background: black;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -51,7 +51,7 @@ body {
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #fff;
+    background: #262626;
     transition: all .5s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -67,7 +67,7 @@ body {
       transform: translate3d(0, 0, 0); }
   .menu .nav-link {
     transition: all .5s ease-out;
-    color: #000;
+    color: #fff;
     display: inline-block;
     font-size: 30px;
     font-weight: 300;
@@ -105,10 +105,11 @@ body {
 .header-logo {
   transition: all .5s ease-out;
   height: 10vh;
-  cursor: pointer; }
+  cursor: pointer;
+  transform: translate(35%, 0); }
   .header-logo:hover {
     transition: all .5s ease-out;
-    transform: translate(0, 15%) scale(1.25); }
+    transform: translate(35%, 15%) scale(1.25); }
 
 .heading {
   margin: 0; }
@@ -218,17 +219,108 @@ body {
     text-decoration: none;
     text-transform: uppercase; }
 
-.search-menu {
-  position: relative;
-  width: 100%;
-  display: inline-block;
-  align-content: center;
-  background-color: #000; }
+.login-section {
+  transition: all .5s ease-out;
+  display: flex;
+  width: 31em;
+  height: 31em;
+  background-repeat: no-repeat;
+  background-image: url("/images/EDP_LOGO.png");
+  transform: translate(120%, 0);
+  z-index: 0; }
+  .login-section:hover {
+    transition: all .5s ease-out;
+    transform: translate(120%, 0) scaleX(-1);
+    background-image: url("/images/LOGO_NO_EDP.png"); }
 
-.search-drop {
-  margin: 1em;
-  width: 200px;
-  background-color: #999; }
+.admin-menu {
+  width: 8rem;
+  height: 180vh;
+  background-color: #262626;
+  list-style: none;
+  text-decoration: none;
+  float: left; }
+
+.admin-nav :hover {
+  background-color: #58b0e3;
+  text-decoration: none; }
+
+.admin-link {
+  text-decoration: none; }
+
+.admin-item {
+  display: block;
+  margin: .25em 0 0;
+  background-color: #3a3a3a;
+  height: 3rem;
+  text-align: center;
+  padding: 20px 0 0;
+  text-decoration: none;
+  color: #fff; }
+
+.btn {
+  width: 100%; }
+
+.dropdown-menu {
+  width: 100%;
+  text-align: center; }
+
+.dashboard-left {
+  width: 30vw; }
+
+.card-deck {
+  margin: 1em 0 0; }
+
+.event-info {
+  list-style: none; }
+  .event-info li {
+    margin: .25rem 0 0; }
+
+.card {
+  background-color: #383838;
+  color: #fff; }
+
+.card-header {
+  background-color: #2e2e2e; }
+
+.card-footer {
+  background-color: #2e2e2e; }
+
+.rep-sales {
+  padding: 5px 5px 5px 8px;
+  overflow: hidden; }
+  .rep-sales p {
+    font-size: 2rem;
+    padding: 5px; }
+
+.rep-table {
+  width: 42vw;
+  height: 15rem;
+  text-align: center;
+  border: none;
+  color: #fff; }
+  .rep-table .progress {
+    font-size: 1rem;
+    height: 1.5rem;
+    background-color: #383838; }
+  .rep-table .progress-bar-striped {
+    background-color: #666666; }
+  .rep-table td {
+    vertical-align: middle; }
+  .rep-table th {
+    vertical-align: middle; }
+
+.retention-trend {
+  background-color: #58b0e3; }
+
+.list-group-item {
+  background-color: #383838;
+  color: #fff; }
+
+.list-group-progress {
+  height: 20rem;
+  background-color: #bfbfbf;
+  z-index: 9; }
 
 @media screen and (max-width: 768px) {
   main {

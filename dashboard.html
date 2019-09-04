@@ -1,0 +1,191 @@
+---
+layout: control_panel
+---
+<div class="card-deck">
+  <div class="card text-center event-details">
+    <div class="card-header">
+      <h4 class="event-name">
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Select an Event
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">EDP Cup Fall</a>
+          <a class="dropdown-item" href="#">Boys Showcase</a>
+          <a class="dropdown-item" href="#">Static Events</a>
+        </div>
+      </div>
+    </h4>
+    </div>
+    <div class="card-body">
+      <ul class="event-info">
+        <li>
+          10/12-10/13
+        </li>
+        <li>
+          Event Status: Ongoing
+        </li>
+        <li>
+          Facilities: Tuckahoe | 35
+        </li>
+      </ul>
+    </div>
+    <div class="card-footer">View Event Details</div>
+  </div>
+</div>
+<div class="card-deck">
+  <div class="card">
+    <div class="card-body text-center">
+      <canvas id="myretentionChart"></canvas>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body text-center">
+      <canvas id="mykpiChart"></canvas>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body text-center">
+      <canvas id="mystateChart"></canvas>
+    </div>
+  </div>
+</div>
+<div class="card-deck">
+  <div class="card stat-card text-center">
+    <h3 class="statcard-number">493</h3>
+    <span class="statcard-desc">Total Registrations</span>
+  </div>
+  <div class="card stat-card text-center">
+    <h3 class="statcard-number">69%</h3>
+    <span class="statcard-desc">Retention Rate</span>
+    <!-- <canvas class="retention-trend" id="mylineChart"></canvas> -->
+  </div>
+  <div class="card stat-card text-center">
+    <h3 class="statcard-number">$0</h3>
+    <span class="statcard-desc">Payments Collected</span>
+  </div>
+  <div class="card stat-card text-center">
+    <h3 class="statcard-number">10,000</h3>
+    <span class="statcard-desc">Expected Event Rank</span>
+  </div>
+</div>
+
+<div class="card-deck">
+  <div class="card">
+    <div class="card-body text-center rep-sales">
+      <p class="card-text">Rep Sales</p>
+      <table class="table table-striped table-dark rep-table">
+        <thead>
+          <tr>
+            <th>Rep</th>
+            <th>Target</th>
+            <th>Registered</th>
+            <th>Percent to Target</th>
+            <th>This Week</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alan</td>
+            <td>22</td>
+            <td>40</td>
+            <td>
+              <div class="progress">
+                <div class="progress-bar" style="width:177%">177%</div>
+              </div>
+            </td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Evan</td>
+            <td>22</td>
+            <td>53</td>
+            <td>
+              <div class="progress">
+                <div class="progress-bar" style="width:55%">55%</div>
+              </div>
+            </td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Jim</td>
+            <td>55</td>
+            <td>43</td>
+            <td>
+              <div class="progress">
+                <div class="progress-bar" style="width:84%">84%</div>
+              </div>
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>121</td>
+            <td>59</td>
+            <td>
+              <div class="progress">
+                <div class="progress-bar" style="width:65%">65%</div>
+              </div>
+            </td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>Karl</td>
+            <td>55</td>
+            <td>43</td>
+            <td>
+              <div class="progress">
+                <div class="progress-bar" style="width:69%;">69%</div>
+              </div>
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Sean</td>
+            <td>275</td>
+            <td>268</td>
+            <td>
+              <div class="progress">
+                <div class="progress-bar" style="width:97%;">97%</div>
+              </div>
+            </td>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body text-center">
+      <p class="card-text">one percent report</p>
+    </div>
+  </div>
+</div>
+
+<div class="card-deck">
+  <div class="card">
+    <div class="card-body text-center">
+        <canvas id="chDonut1"></canvas>
+      <p class="card-text">Past Participants</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body text-center">
+      <p class="card-text">Club Participation</p>
+      <ul class="list-group">
+        <li class="list-group-item text-left">
+          FC Copa
+          <span class="progress-bar-striped" style="width: 100%;"></span>
+        </li>
+        <li class="list-group-item text-left">
+          Cedar Stars
+          <span class="progress-bar" style="width: 50%;"></span>
+        </li>
+        <li class="list-group-item text-left">
+          SJEB Rush
+          <span class="list-group-progress text-right" style="width: 25%;"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

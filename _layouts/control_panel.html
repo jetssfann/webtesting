@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {% include head.html %}
+  <header>
+
+  </header>
+  <body>
+    <nav class="admin-menu">
+        <a href="/#">
+          <img src="images/EDP_LOGO.png" alt="" class="header-logo">
+        </a>
+
+
+          <ul class="admin-nav">
+            <a href="#" class="admin-link"><li class="admin-item">Home</li></a>
+            <a href="/dashboard" class="admin-link"><li class="admin-item"><i class="fas fa-tachometer-alt"></i> Dashboard</li></a>
+            <a href="#" class="admin-link"><li class="admin-item"><i class="fas fa-file-invoice-dollar"></i>  Sales</li></a>
+            <a href="#" class="admin-link"><li class="admin-item"><i class="fas fa-clipboard-list"></i> Admin</li></a>
+            <a href="#" class="admin-link"><li class="admin-item"><i class="fas fa-hard-hat"></i>  OPs</li></a>
+            <a href="#" class="admin-link"><li class="admin-item"><i class="fab fa-leanpub"></i>  Production</li></a>
+            <a href="#" class="admin-link"><li class="admin-item"><i class="fas fa-male"></i>  Referees</li></a>
+            <a href="#" class="admin-link"><li class="admin-item"><i class="fas fa-tshirt"></i>  Apollo</li></a>
+            <a href="#" class="admin-link"><li class="admin-item"><i class="fas fa-hotel"></i>  Titan</li></a>
+            <a href="#" class="admin-link"><li class="admin-item">Logout</li></a>
+          </ul>
+        </nav>
+
+    {{ content }}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+  <footer>
+    {% include footer.html %}
+  </footer>
+</html>

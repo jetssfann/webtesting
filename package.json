@@ -4,6 +4,7 @@
   "description": "EDP website",
   "main": "index.js",
   "dependencies": {
+    "chart.js": "^2.8.0",
     "node-sass": "^4.11.0"
   },
   "devDependencies": {},
