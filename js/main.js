@@ -41,6 +41,10 @@
 //
 //   }
 // };
+//
+// Chart.defaults.global.plugins.datalabels.display = function(ctx) {
+//   return ctx.value !== 0;
+// };
 
 let myretentionChart = document.getElementById('myretentionChart').getContext('2d');
 
@@ -51,26 +55,7 @@ let retentionChart = new Chart(myretentionChart, {
     datasets:[{
       label:'Teams',
       data:[302,191],
-      backgroundColor:['yellow','blue'],
-      borderWidth:1,
-      borderColor:'black'
-    }]
-  },
-  options:{
-    cutoutPercentage:80,
-  }
-})
-
-let mykpiChart = document.getElementById('mykpiChart').getContext('2d');
-
-let kpiChart = new Chart(mykpiChart, {
-  type:'doughnut',
-  data:{
-    labels:['Registered', 'Remaing'],
-    datasets:[{
-      label:'Teams',
-      data:[493,550-493],
-      backgroundColor:['green','red'],
+      backgroundColor:['yellow','purple'],
       borderWidth:1,
       borderColor:'black'
     }]
@@ -81,7 +66,41 @@ let kpiChart = new Chart(mykpiChart, {
         fontColor: '#fff',
       }
     }
+  }
+})
+
+let mykpiChart = document.getElementById('mykpiChart').getContext('2d');
+
+let kpiChart = new Chart(mykpiChart, {
+  type:'doughnut',
+  data:{
+    labels:[ 'Wait Listed', 'Registered', 'Remaining'],
+    datasets:[{
+      label:'Teams',
+      data:[555-550,550,550-550],
+      backgroundColor:['blue','green','red'],
+      borderWidth:1,
+      borderColor:'black'
+    }]
   },
+  options:{
+    legend: {
+      labels:{
+        fontColor: '#fff',
+      }
+    },
+    plugins: {
+      datalabels: {
+        display: function(context) {
+        var index = context.dataIndex;
+        var value = context.dataset.data[0];
+        return value <= 0 ? 'true' :  // draw negative values in red
+            index % 2 ? 'blue' :    // else, alternate values in blue and green
+            'green';
+    },
+     },
+    },
+  }
 });
 
 
@@ -101,7 +120,7 @@ let stateChart = new Chart(mystateChart, {
   },
   options:{
     legend: {
-      display: false
+      display: false,
     }
   }
 });

@@ -51,20 +51,20 @@ layout: control_panel
   </div>
 </div>
 <div class="card-deck">
-  <div class="card stat-card text-center">
+  <div class="card stat-card text-center reg-stat">
     <h3 class="statcard-number">493</h3>
     <span class="statcard-desc">Total Registrations</span>
   </div>
-  <div class="card stat-card text-center">
+  <div class="card stat-card text-center retention-stat">
     <h3 class="statcard-number">69%</h3>
     <span class="statcard-desc">Retention Rate</span>
     <!-- <canvas class="retention-trend" id="mylineChart"></canvas> -->
   </div>
-  <div class="card stat-card text-center">
+  <div class="card stat-card text-center money-stat">
     <h3 class="statcard-number">$0</h3>
     <span class="statcard-desc">Payments Collected</span>
   </div>
-  <div class="card stat-card text-center">
+  <div class="card stat-card text-center rank-stat">
     <h3 class="statcard-number">10,000</h3>
     <span class="statcard-desc">Expected Event Rank</span>
   </div>
@@ -157,35 +157,279 @@ layout: control_panel
   </div>
   <div class="card">
     <div class="card-body text-center">
-      <p class="card-text">one percent report</p>
+      <p class="card-text">Club Participation</p>
+      <ul class="list-group">
+        <a href="" class="club-link">
+          <li class="list-group-item text-left progress-bar" style="width: 36%;">
+            FC Copa
+            <span class="team-token"> 35 Teams</span>
+          </li>
+        </a>
+        <a href="" class="club-link">
+          <li class="list-group-item text-left progress-bar" style="width: 66%;">
+            Cedar Stars
+            <span class="team-token"> 70 Teams</span>
+          </li>
+        </a>
+        <a href="" class="club-link">
+          <li class="list-group-item text-left progress-bar" style="width: 26%;">
+            PDA
+            <span class="team-token"> 8 Teams</span>
+          </li>
+        </a>
+        <a href="" class="club-link">
+          <li class="list-group-item text-left progress-bar" style="width: 34%;">
+            Pipeline
+            <span class="team-token"> 20 Teams</span>
+          </li>
+        </a>
+        <a href="" class="club-link">
+          <li class="list-group-item text-left progress-bar" style="width: 42%;">
+            SJEB Rush
+            <span class="team-token"> 38 Teams</span>
+          </li>
+        </a>
+        <a href="" class="club-link">
+          <li class="list-group-item text-left progress-bar" style="width: 45%;">
+            Ukrainians
+            <span class="team-token"> 40 Teams</span>
+          </li>
+        </a>
+        <a href="" class="club-link">
+          <li class="list-group-item text-left progress-bar" style="width: 54%;">
+            SUSA
+            <span class="team-token"> 50 Teams</span>
+          </li>
+        </a>
+        <!-- <button type="button" class="btn team-token">
+<span class="badge badge-light">40</span> Teams
+        </button> -->
+      </ul>
     </div>
   </div>
 </div>
 
 <div class="card-deck">
   <div class="card">
-    <div class="card-body text-center">
-        <canvas id="chDonut1"></canvas>
+    <div class="card-body text-center retention-table">
       <p class="card-text">Past Participants</p>
+      <table class="table table-striped table-dark rep-table">
+        <thead>
+          <tr>
+            <th>Boys</th>
+            <th>Returning</th>
+            <th>New</th>
+            <th>Not Registered</th>
+            <th>Girls</th>
+            <th>Returning</th>
+            <th>New</th>
+            <th>Not Registered</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>U11</td>
+            <td>2</td>
+            <td>4</td>
+            <td>0</td>
+            <td>U11</td>
+            <td>1</td>
+            <td>4</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>U12</td>
+            <td>13</td>
+            <td>6</td>
+            <td>7</td>
+            <td>U12</td>
+            <td>6</td>
+            <td>5</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>U13</td>
+            <td>18</td>
+            <td>5</td>
+            <td>0</td>
+            <td>U13</td>
+            <td>4</td>
+            <td>11</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>U14</td>
+            <td>10</td>
+            <td>2</td>
+            <td>1</td>
+            <td>U14</td>
+            <td>5</td>
+            <td>3</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>U15</td>
+            <td>5</td>
+            <td>15</td>
+            <td>0</td>
+            <td>U15</td>
+            <td>0</td>
+            <td>15</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>U16</td>
+            <td>0</td>
+            <td>24</td>
+            <td>0</td>
+            <td>U16</td>
+            <td>0</td>
+            <td>17</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>U17</td>
+            <td>0</td>
+            <td>13</td>
+            <td>0</td>
+            <td>U17</td>
+            <td>0</td>
+            <td>17</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>U18</td>
+            <td>0</td>
+            <td>13</td>
+            <td>0</td>
+            <td>U18</td>
+            <td>1</td>
+            <td>10</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>U19</td>
+            <td>0</td>
+            <td>6</td>
+            <td>0</td>
+            <td>U19</td>
+            <td>0</td>
+            <td>9</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
   <div class="card">
-    <div class="card-body text-center">
-      <p class="card-text">Club Participation</p>
-      <ul class="list-group">
-        <li class="list-group-item text-left">
-          FC Copa
-          <span class="progress-bar-striped" style="width: 100%;"></span>
-        </li>
-        <li class="list-group-item text-left">
-          Cedar Stars
-          <span class="progress-bar" style="width: 50%;"></span>
-        </li>
-        <li class="list-group-item text-left">
-          SJEB Rush
-          <span class="list-group-progress text-right" style="width: 25%;"></span>
-        </li>
-      </ul>
+    <div class="card-body text-center rep-sales">
+      <p class="card-text">One Percent Report</p>
+      <table class="table table-striped table-dark rep-table">
+        <thead>
+          <tr>
+            <th>Group</th>
+            <th>Registered</th>
+            <th>Targets</th>
+            <th>Lost</th>
+            <th>Group</th>
+            <th>Registered</th>
+            <th>Targets</th>
+            <th>Lost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>B U11</td>
+            <td>2</td>
+            <td>4</td>
+            <td>0</td>
+            <td>G U11</td>
+            <td>1</td>
+            <td>4</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>B U12</td>
+            <td>13</td>
+            <td>6</td>
+            <td>7</td>
+            <td>G U12</td>
+            <td>6</td>
+            <td>5</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>B U13</td>
+            <td>18</td>
+            <td>5</td>
+            <td>0</td>
+            <td>G U13</td>
+            <td>4</td>
+            <td>11</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>B U14</td>
+            <td>10</td>
+            <td>2</td>
+            <td>1</td>
+            <td>G U14</td>
+            <td>5</td>
+            <td>3</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>B U15</td>
+            <td>5</td>
+            <td>15</td>
+            <td>0</td>
+            <td>G U15</td>
+            <td>0</td>
+            <td>15</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>B U16</td>
+            <td>0</td>
+            <td>24</td>
+            <td>0</td>
+            <td>G U16</td>
+            <td>0</td>
+            <td>17</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>B U17</td>
+            <td>0</td>
+            <td>13</td>
+            <td>0</td>
+            <td>G U17</td>
+            <td>0</td>
+            <td>17</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>B U18</td>
+            <td>0</td>
+            <td>13</td>
+            <td>0</td>
+            <td>G U18</td>
+            <td>1</td>
+            <td>10</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>B U19</td>
+            <td>0</td>
+            <td>6</td>
+            <td>0</td>
+            <td>G U19</td>
+            <td>0</td>
+            <td>9</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

@@ -11,7 +11,7 @@ body {
   z-index: 3; }
   .menu-btn .btn-line {
     transition: all .5s ease-out;
-    background: #fff;
+    background: #000;
     height: 3px;
     margin: 0 0 5px;
     width: 28px; }
@@ -67,7 +67,7 @@ body {
       transform: translate3d(0, 0, 0); }
   .menu .nav-link {
     transition: all .5s ease-out;
-    color: #fff;
+    color: #000;
     display: inline-block;
     font-size: 30px;
     font-weight: 300;
@@ -242,6 +242,7 @@ body {
   float: left; }
 
 .admin-nav :hover {
+  transition: all .5s ease-out;
   background-color: #58b0e3;
   text-decoration: none; }
 
@@ -258,7 +259,7 @@ body {
   text-decoration: none;
   color: #fff; }
 
-.btn {
+.dropdown-toggle {
   width: 100%; }
 
 .dropdown-menu {
@@ -280,6 +281,18 @@ body {
   background-color: #383838;
   color: #fff; }
 
+.rank-stat {
+  background-color: #c4a000; }
+
+.money-stat {
+  background-color: #00ab61; }
+
+.retention-stat {
+  background-color: #58b0e3; }
+
+.reg-stat {
+  background-color: #cf1f25; }
+
 .card-header {
   background-color: #2e2e2e; }
 
@@ -287,40 +300,67 @@ body {
   background-color: #2e2e2e; }
 
 .rep-sales {
-  padding: 5px 5px 5px 8px;
+  padding: 0;
   overflow: hidden; }
   .rep-sales p {
     font-size: 2rem;
-    padding: 5px; }
+    padding: 5px;
+    margin: 2px 0; }
 
-.rep-table {
-  width: 42vw;
+.retention-table {
+  padding: 0;
+  overflow: hidden;
+  margin: 2px 0; }
+  .retention-table p {
+    font-size: 2rem;
+    padding: 2px;
+    margin: 2px 0; }
+
+.progress {
+  font-size: 1rem;
+  height: 1.5rem;
+  background-color: #383838; }
+
+.progress-bar-striped {
+  background-color: #666666; }
+
+td {
+  vertical-align: middle; }
+
+th {
+  vertical-align: middle; }
+
+.percent-table {
+  width: 30vw;
   height: 15rem;
   text-align: center;
   border: none;
   color: #fff; }
-  .rep-table .progress {
-    font-size: 1rem;
-    height: 1.5rem;
-    background-color: #383838; }
-  .rep-table .progress-bar-striped {
-    background-color: #666666; }
-  .rep-table td {
-    vertical-align: middle; }
-  .rep-table th {
-    vertical-align: middle; }
 
 .retention-trend {
   background-color: #58b0e3; }
 
 .list-group-item {
-  background-color: #383838;
-  color: #fff; }
+  background-color: #262626;
+  color: #fff;
+  border-color: #393939; }
 
-.list-group-progress {
-  height: 20rem;
-  background-color: #bfbfbf;
-  z-index: 9; }
+.club-link {
+  transition: all .5s ease-out;
+  text-decoration: none;
+  color: #fff; }
+  .club-link :hover {
+    transition: all .5s ease-out;
+    background-color: #4c4c4c;
+    text-decoration: none; }
+    .club-link :hover span {
+      transition: all .5s ease-out;
+      background-color: #4c4c4c; }
+
+.team-token {
+  color: #fff;
+  float: right;
+  background-color: #262626; }
 
 @media screen and (max-width: 768px) {
   main {

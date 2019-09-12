@@ -2,14 +2,22 @@
   "name": "edp",
   "version": "1.0.0",
   "description": "EDP website",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "chart.js": "^2.8.0",
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.12",
     "node-sass": "^4.11.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
   "scripts": {
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "sass": "node-sass -w scss/ -o css/ --recursive",
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",

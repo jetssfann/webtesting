@@ -6,6 +6,7 @@ $background-opacity: .9;
 $edp-light-blue: #58b0e3;
 $edp-red: #cf1f25;
 $edp-dark-blue: #0d2441;
+$color: #fff;
 
 body {
   background: $primary-color;
@@ -42,9 +43,9 @@ body {
 
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
-    @return #000;
-  } @else {
     @return #fff;
+  } @else {
+    @return #000;
   }
 }
 
